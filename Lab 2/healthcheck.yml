@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: hw-demo-container
-          image: "registry.ng.bluemix.net/<namespace>/hello-world:2"
+          image: "mycluster.icp:8500/default/health-check-demo"
           imagePullPolicy: Always
           livenessProbe:
             httpGet:
